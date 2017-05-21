@@ -9,7 +9,6 @@ public class Word {
     private Double TF;
     private Double IDF;
     private Double TFIDF;
-    private Double norma;
     private Integer totalDocuments;
     private Integer totalWordsRepeatedInDocuments;
     private Integer totalWordsInAllDocuments;
@@ -67,14 +66,6 @@ public class Word {
 
     public Integer getTotalWordsInAllDocuments() {
         return totalWordsInAllDocuments;
-    }
-
-    public Double getNorma() {
-        return norma;
-    }
-
-    public void setNorma(Double norma) {
-        this.norma = norma;
     }
 
     public void setTotalWordsInAllDocuments(Integer totalWordsInAllDocuments) {

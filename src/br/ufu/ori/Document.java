@@ -7,6 +7,7 @@ import java.util.*;
  */
 public class Document {
     private Map<String, Word> words;
+    private Double norma;
 
     public Document() {
         words = new HashMap<String, Word>();
@@ -14,6 +15,14 @@ public class Document {
 
     public Map<String, Word> getWords() {
         return words;
+    }
+
+    public Double getNorma() {
+        return norma;
+    }
+
+    public void setNorma(Double norma) {
+        this.norma = norma;
     }
 
     public void calcTFIDF() throws Exception {
